@@ -7,4 +7,4 @@ A TF2 config file to easily manage comp servers (rcon required)
 
 ## Using the aliases
 You can start by typing 'csm' into your console.
-Be aware that you have to place the rcon password first with 'rcon_password YOURPASSOWRD'
+Be aware that you have to place the rcon password first with 'rcon_password YOUR_PASSWORD'
