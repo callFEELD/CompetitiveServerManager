@@ -1,0 +1,66 @@
+{
+    "ETF2L": [
+        "etf2l",
+
+        "etf2l_6v6",
+        "etf2l_6v6_5cp",
+        "etf2l_6v6_ctf",
+        "etf2l_6v6_koth",
+        "etf2l_6v6_stopwatch",
+
+        "etf2l_9v9",
+        "etf2l_9v9_5cp",
+        "etf2l_9v9_ctf",
+        "etf2l_9v9_koth",
+        "etf2l_9v9_stopwatch",
+
+        "etf2l_bball",
+        "etf2l_custom",
+        "etf2l_golden_cap",
+        "etf2l_ultiduo"
+    ],
+
+    "UGC": [
+        "ugc_6v_standard",
+        "ugc_6v_standard_overtime",
+        "csm_ugc_6_koth",
+        "ugc_6v_koth_overtime",
+        "ugc_6v_golden",
+        "ugc_6v_stopwatch",
+
+        "ugc_HL_standard",
+        "ugc_HL_koth",
+        "ugc_HL_ctf",
+        "ugc_HL_stopwatch",
+
+        "ugc_4v_standard",
+        "ugc_4v_standard_overtime",
+        "ugc_4v_koth",
+        "ugc_4v_koth_overtime",
+        "ugc_4v_golden",
+        "ugc_4v_stopwatch"
+    ],
+
+    "RGL": [
+        "rgl_6s_5cp_scrim",
+        "rgl_6s_5cp_match_half1",
+        "rgl_6s_5cp_match_half2",
+        "rgl_6s_5cp_gc",
+        "rgl_6s_koth",
+        "rgl_6s_koth_bo5",
+
+        "rgl_HL_stopwatch",
+        "rgl_HL_koth",
+        "rgl_HL_koth_bo5",
+
+        "rgl_7s_stopwatch",
+        "rgl_7s_koth",
+        "rgl_7s_koth_bo5",
+
+        "rgl_mm_5cp",
+        "rgl_mm_stopwatch",
+        "rgl_mm_koth",
+        "rgl_mm_koth_bo5"
+    ]
+
+}
