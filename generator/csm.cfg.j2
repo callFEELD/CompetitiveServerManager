@@ -1,0 +1,25 @@
+// callFEELD's (Competitive) Server Manager
+// version {{ version }}
+//
+// https://github.com/callFEELD/CompetitiveServerManager
+//
+
+
+{%- macro print_command(command) %}
+{%- if command.is_group %}
+// Commands for {{ command.name }}
+alias "{{ command.name }}" "echo;echo;{% for cmd in command.sub_cmds %}echo > {{cmd.name}}{% if cmd.description != "" %} | {{cmd.description}}{% endif %};{%- endfor %}"
+{%- endif %}
+{%- if not command.is_group %}
+alias "{{ command.name }}" "echo; echo > executing command ...; {{ command.run }}; say [CSM] executed {{ command.name }}"
+{%- endif %}
+{%- for cmd in command.sub_cmds %}
+{{- print_command(cmd) }}
+{%- endfor %}
+{%- endmacro %}
+
+{{ print_command(command) }}
+
+
+// Loaded successfully message
+echo "> loaded callFEELD's (Competitive) Server Manager successfully"
