@@ -1,4 +1,4 @@
-version: 1.0
+version: 1.1
 
 commands:
   enable:
@@ -60,6 +60,8 @@ commands:
       koth_overtime: rcon exec ugc_4v_koth_overtime
       gc: rcon exec ugc_4v_golden
       stopwatch: rcon exec ugc_4v_stopwatch
+    other:
+      ultiduo: rcon exec ugc_UD_ultiduo
 
   rgl:
     6s:
