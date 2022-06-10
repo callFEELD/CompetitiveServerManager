@@ -1,0 +1,84 @@
+version: 1.0
+
+commands:
+  enable:
+    teamready:
+      run: rcon mp_tournament_readymode 0
+      description: Enables ready up mode for red and blue
+
+    singleready:
+      run: rcon mp_tournament_readymode 1
+      description: Enables ready up mode for every single player
+
+    dm:
+      run: rcon sm plugins load soap_tf2dm; rcon mp_tournament_restart
+      description: Enables DM Mod on the server
+
+  disable:
+    dm:
+      run: rcon sm plugins unload soap_tf2dm; rcon mp_tournament_restart
+      description: Disables DM Mod on the server
+
+  reload:
+    tournament:
+      run: rcon mp_tournament_restart
+      description: Reloads the tournament on the server
+
+  etf2l:
+    6s:
+      5cp: rcon exec etf2l_6v6_5cp
+      koth: rcon exec etf2l_6v6_koth
+      ctf: rcon exec etf2l_6v6_ctf
+      stopwatch: rcon exec etf2l_6v6_stopwatch
+    hl:
+      5cp: rcon exec etf2l_9v9_5cp
+      koth: rcon exec etf2l_9v9_koth
+      ctf: rcon exec etf2l_9v9_ctf
+      stopwatch: rcon exec etf2l_9v9_stopwatch
+    other:
+      ultiduo: rcon exec etf2l_ultiduo
+      bball: rcon exec etf2l_bball
+      gc: rcon exec etf2l_golden_cap
+
+  UGC:
+    6s:
+      standard: rcon exec ugc_6v_standard
+      standard_overtime: rcon exec ugc_6v_standard_overtime
+      koth: rcon exec ugc_6v_koth
+      koth_overtime: rcon exec ugc_6v_koth_overtime
+      gc: rcon exec ugc_6v_golden
+      stopwatch: rcon exec ugc_6v_stopwatch
+    hl:
+      standard: rcon exec ugc_HL_standard
+      koth: rcon exec ugc_HL_koth
+      ctf: rcon exec ugc_HL_ctf
+      stopwatch: rcon exec ugc_HL_stopwatch
+    4s:
+      standard: rcon exec ugc_4v_standard
+      standard_overtime: rcon exec ugc_4v_standard_overtime
+      koth: rcon exec ugc_4v_koth
+      koth_overtime: rcon exec ugc_4v_koth_overtime
+      gc: rcon exec ugc_4v_golden
+      stopwatch: rcon exec ugc_4v_stopwatch
+
+  rgl:
+    6s:
+      5cp_scrim: rcon exec rgl_6s_5cp_scrim
+      5cp_match_h1: rcon exec rgl_6s_5cp_match_half1
+      5cp_match_h2: rcon exec rgl_6s_5cp_match_half2
+      gc: rcon exec rgl_6s_5cp_gc
+      koth: rcon exec rgl_6s_koth
+      koth_bo5: rcon exec rgl_6s_koth_bo5
+    hl:
+      stopwatch: rcon exec rgl_HL_stopwatch
+      koth: rcon exec rgl_HL_koth
+      koth_bo5: rcon exec rgl_HL_koth_bo5
+    7s: # Prolander
+      stopwatch: rcon exec rgl_7s_stopwatch
+      koth: rcon exec  rgl_7s_koth
+      koth_bo5: rcon exec rgl_7s_koth_bo5
+    mm:
+      5cp: rcon exec rgl_mm_5cp
+      stopwatch: rcon exec rgl_mm_stopwatch
+      koth: rcon exec rgl_mm_koth
+      koth_bo5: rcon exec rgl_mm_koth_bo5
